@@ -2,6 +2,8 @@ FROM fluent/fluentd:latest
 
 MAINTAINER harmeetsingh@cloudblocks.in
 
+RUN apk --no-cache add curl-dev
+
 # contains container's logs on host (/var/lib/docker/containers)
 VOLUME ["/var/lib/docker/containers"]
 
